@@ -58,7 +58,8 @@
 		$("#register0").click(function(){ 
 			location.href = 'register';
 		});
-		$("#login0").click(function(){ 
+		$("#login0").click(function(e){
+            e.preventDefault();
 			var username = $("#username").val();
 			var password = $("#password").val();
 			var data = {"uname":username,"upwd":password};
